@@ -11,11 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
-        <button id="clear_button">Clear</button>
-        
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_input">
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
     </div>
     
+    <div class="pop_up_setting" id="pop_up_setting">
+        <div class="pop_up_setting_input">
+            <label class="setting_item" for="slider">Выберите значение</label>
+            <input class="setting_item" type="range" id="slider" name="slider" min="0" max="100" value="1">
+            <input class="setting_item" type="text" id="color">
+        </div>
+    </div>
+
+    <div class="menu">
+        <button class="icon" id="clear_button"><img src="sources/clear.svg" alt=""></button>
+        <button class="icon" id="eraser_button"><img src="sources/eraser.svg" alt=""></button>
+        <button class="icon" id="triangle_button"><img src="sources/triangle.svg" alt=""></button>
+        <button class="icon" id="rectangle_button"><img src="sources/rectangle.svg" alt=""></button>
+        <button class="icon" id="download_button"><img src="sources/download.svg" alt=""></button>
+        <button class="icon" id="save_button"><img src="sources/save.svg" alt=""></button>
+        <button class="icon" id="settings_button"><img src="sources/settings.svg" alt=""></button>
+    </div>
     <canvas id="canvas" width="500" height="500"></canvas>
     <script src="main.js"></script>
 </body>
